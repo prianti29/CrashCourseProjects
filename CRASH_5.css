@@ -1,0 +1,175 @@
+header {
+  text-align: center;
+  background-color: rgb(22, 7, 7);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+header h1 {
+  color: rgb(240, 237, 226);
+  border: 3px rgb(241, 241, 237) solid;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 1px;
+}
+p::after{
+  content: "...";
+}
+.banner {
+  position: relative;
+}
+.banner .welcome-head {
+  /* WELCOME HEAD IN IMAGE */
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  top: 30%;
+  background-color: rgb(12, 11, 11);
+  color: aliceblue;
+}
+.banner img {
+  max-width: 100%;
+}
+.banner h2 {
+  font-size: 25px;
+}
+.banner h2 span {
+  font-size: 50px;
+}
+nav {
+  background-color: cornsilk;
+  padding: 20px;
+  top: 100px;
+  position: sticky;
+  /* max-width: 100%;*/
+} 
+nav li {
+  /* color: cornsilk; */
+  font-size: 24px;
+  width: 25%;
+  display: inline-block;
+}
+nav li a {
+  color: rgb(10, 10, 9);
+  text-decoration: none;
+}
+nav ul {
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+article h2{
+  font-size: 50px;
+}
+article p{
+  font-size: 20px;
+  line-height: 2em;
+}
+main{
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  /* box-sizing: border-box;*/
+} 
+.images li{
+  text-align: center;
+  width: 70%;
+  margin: 20px 5%;
+}
+.images{
+  text-align: center;
+}
+.images li img{
+  max-width: 100%;
+}
+section h2{
+   /* text-align:center; */
+   font-size: 35px;
+}
+section p{
+  font-size: 25px;
+}
+section.join{
+  text-align: center;
+  padding: 5px 25px;
+  background-color: black;
+  color: aliceblue;
+}
+form input{
+  border-radius: 9px;
+  padding: 10px;
+  width: max-content;
+}
+footer{
+  text-align: center;
+  background-color: cornsilk;
+  padding:8px;
+}
+@media screen and (max-width: 1400px) {
+  .banner .welcome-head h2{
+    font-size: 40px;
+  }
+  nav-li {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .banner .welcome-head {
+    padding: 1px;
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome span {
+    font-size: 1em;
+  }
+  .banner .welcome-head br{
+    display: none;
+    font-size: 25px;
+  }
+  .images li {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 560px){
+  nav li{
+    font-size: 15px;
+    display: block;
+    margin: 12px 0;
+    width: 100%;
+  }
+  header{
+    position: relative;
+  }
+  nav{
+    top: 0;
+  }
+}
+
+
+nav li a:hover{
+  text-decoration: underline;
+}
+.images li:hover{
+  position: relative;
+  top: -4px;
+}
+form input:focus{
+  border: 3px dashed rgb(70, 58, 11);
+}
+form input: :valid{
+  border: 3px solid green;
+}
+article p::first-line{
+  font-weight: bold;
+  font-size: 1em;
+}
+section.join p::first-letter{
+  font-size: 1em;
+}
+section.join p::selection{
+  background-color: rgb(218, 178, 21);
+  color: black;
+}
